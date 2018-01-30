@@ -17,11 +17,10 @@ RUN \
 	chmod +x /burst/run.sh
 
 ADD nxt.properties /burst/conf/
-ADD http://package.cryptoguru.org/dumps/latest.bbd /burst/burst_db/
+
 
 WORKDIR /burst
 EXPOSE 8123/tcp 8125/tcp
-
-
+VOLUME /burst/burst_db
 
 CMD /burst/run.sh
