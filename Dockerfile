@@ -13,7 +13,7 @@ RUN \
 	mv /tmp/burstcoin-1.3.6cg.zip /burst/ && \
 	unzip /burst/burstcoin-1.3.6cg.zip -d /burst/ && \
 	rm /burst/burstcoin-1.3.6cg.zip && \
-	ls /burst && \
+	mv /burst/burstcoin-1.3.6cg/* /burst/. && \
 	chmod +x /burst/burst.sh
 
 ADD nxt.properties /burst/conf/
