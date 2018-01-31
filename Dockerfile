@@ -21,6 +21,6 @@ ADD nxt.properties /burst/conf/
 
 WORKDIR /burst
 EXPOSE 8123/tcp 8125/tcp
-VOLUME /burst/burst_db
+VOLUME /burst/burst_db /burst/conf/
 
 CMD /burst/burst.sh
