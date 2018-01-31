@@ -16,9 +16,6 @@ RUN \
 	mv /burst/burstcoin-1.3.6cg/* /burst/. && \
 	chmod +x /burst/burst.sh
 
-ADD nxt.properties /burst/conf/
-
-
 WORKDIR /burst
 EXPOSE 8123/tcp 8125/tcp
 VOLUME /burst/burst_db /burst/conf/
