@@ -13,9 +13,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh '''git pull
-
-docker build .'''
+        sh 'docker build .'
       }
     }
   }
