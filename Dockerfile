@@ -13,7 +13,6 @@ RUN \
 	mv /tmp/burstcoin-2.0.0.zip /burst/ && \
 	unzip /burst/burstcoin-2.0.0.zip -d /burst/ && \
 	rm /burst/burstcoin-2.0.0.zip && \
-	mv /burst/burstcoin-2.0.0/* /burst/. && \
 	chmod +x /burst/burst.sh
 
 WORKDIR /burst
