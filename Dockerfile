@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 
 
-ADD ["https://github.com/PoC-Consortium/burstcoin/releases/download/1.3.6cg/burstcoin-1.3.6cg.zip", "/tmp"]
+ADD ["https://github.com/PoC-Consortium/burstcoin/releases/download/2.0.0/burstcoin-2.0.0.zip", "/tmp"]
 
 
 RUN \
