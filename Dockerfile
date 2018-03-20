@@ -10,10 +10,10 @@ RUN \
 	apt-get install -y \
 		zip default-jre chrony && \
 	mkdir -p /burst/burst_db && \
-	mv /tmp/burstcoin-1.3.6cg.zip /burst/ && \
-	unzip /burst/burstcoin-1.3.6cg.zip -d /burst/ && \
-	rm /burst/burstcoin-1.3.6cg.zip && \
-	mv /burst/burstcoin-1.3.6cg/* /burst/. && \
+	mv /tmp/burstcoin-2.0.0.zip /burst/ && \
+	unzip /burst/burstcoin-2.0.0.zip -d /burst/ && \
+	rm /burst/burstcoin-2.0.0.zip && \
+	mv /burst/burstcoin-2.0.0/* /burst/. && \
 	chmod +x /burst/burst.sh
 
 WORKDIR /burst
